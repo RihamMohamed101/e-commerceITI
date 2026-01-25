@@ -4,7 +4,7 @@
     "name": "Saint Brvbeu",
     "price": 35.22,
     "image": "images/product1.png",
-    "description": "A sophisticated blend of floral and woody notes, perfect for evening wear."
+    "description": "A sophisticated blend of floral and woody notes, perfect for evening wear.",
     "quantity":50
   },
   {
@@ -12,7 +12,7 @@
     "name": "Chamelio",
     "price": 15.92,
     "image": "images/product2.png",
-    "description": "Fresh and citrusy, this scent provides a light and energetic feel for daily use."
+    "description": "Fresh and citrusy, this scent provides a light and energetic feel for daily use.",
     "quantity":40
   },
   {
@@ -20,7 +20,7 @@
     "name": "Secta Corm",
     "price": 32.28,
     "image": "images/product3.png",
-    "description": "An earthy and spicy fragrance designed for a bold and lasting impression."
+    "description": "An earthy and spicy fragrance designed for a bold and lasting impression.",
     "quantity":100
   },
   {
@@ -28,7 +28,7 @@
     "name": "Beone Neo",
     "price": 25.98,
     "image": "images/product4.png",
-    "description": "A modern, minimalist scent with clean aquatic and musk undertones."
+    "description": "A modern, minimalist scent with clean aquatic and musk undertones.",
     "quantity":57
   },
   {
@@ -36,7 +36,7 @@
     "name": "JK Klove",
     "price": 25.22,
     "image": "images/product5.png",
-    "description": "Rich and warm aroma featuring notes of vanilla and exotic spices."
+    "description": "Rich and warm aroma featuring notes of vanilla and exotic spices.",
     "quantity":64
   },
   {
@@ -44,7 +44,7 @@
     "name": "Cygnus",
     "price": 29.87,
     "image": "images/product6.png",
-    "description": "A delicate and airy fragrance that captures the essence of a spring garden."
+    "description": "A delicate and airy fragrance that captures the essence of a spring garden.",
     "quantity":48
   },
   {
@@ -52,7 +52,7 @@
     "name": "Ceroky",
     "price": 35.88,
     "image": "images/product7.png",
-    "description": "Deep, smoky, and mysterious—a fragrance for those who enjoy a complex profile."
+    "description": "Deep, smoky, and mysterious—a fragrance for those who enjoy a complex profile.",
     "quantity":12
   },
   {
@@ -60,7 +60,7 @@
     "name": "Kenirt",
     "price": 17.35,
     "image": "images/product8.png",
-    "description": "A subtle, sweet scent with a hint of sandalwood for a balanced finish."
+    "description": "A subtle, sweet scent with a hint of sandalwood for a balanced finish.",
     "quantity":34
   }
 ]
