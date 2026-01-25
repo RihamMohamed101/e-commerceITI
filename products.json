@@ -3,56 +3,56 @@
     "id": 1,
     "name": "Saint Brvbeu",
     "price": 35.22,
-    "image": "images/1.png",
+    "image": "images/product1.png",
     "description": "A sophisticated blend of floral and woody notes, perfect for evening wear."
   },
   {
     "id": 2,
     "name": "Chamelio",
     "price": 15.92,
-    "image": "images/2.png",
+    "image": "images/product2.png",
     "description": "Fresh and citrusy, this scent provides a light and energetic feel for daily use."
   },
   {
     "id": 3,
     "name": "Secta Corm",
     "price": 32.28,
-    "image": "images/3.png",
+    "image": "images/product3.png",
     "description": "An earthy and spicy fragrance designed for a bold and lasting impression."
   },
   {
     "id": 4,
     "name": "Beone Neo",
     "price": 25.98,
-    "image": "images/4.png",
+    "image": "images/product4.png",
     "description": "A modern, minimalist scent with clean aquatic and musk undertones."
   },
   {
     "id": 5,
     "name": "JK Klove",
     "price": 25.22,
-    "image": "images/5.png",
+    "image": "images/product5.png",
     "description": "Rich and warm aroma featuring notes of vanilla and exotic spices."
   },
   {
     "id": 6,
     "name": "Cygnus",
     "price": 29.87,
-    "image": "images/6.png",
+    "image": "images/product6.png",
     "description": "A delicate and airy fragrance that captures the essence of a spring garden."
   },
   {
     "id": 7,
     "name": "Ceroky",
     "price": 35.88,
-    "image": "images/7.png",
+    "image": "images/product7.png",
     "description": "Deep, smoky, and mysterious—a fragrance for those who enjoy a complex profile."
   },
   {
     "id": 8,
     "name": "Kenirt",
     "price": 17.35,
-    "image": "images/8.png",
+    "image": "images/product8.png",
     "description": "A subtle, sweet scent with a hint of sandalwood for a balanced finish."
   }
 ]
