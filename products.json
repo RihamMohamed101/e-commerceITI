@@ -5,7 +5,8 @@
     "price": 35.22,
     "image": "images/product1.png",
     "description": "A sophisticated blend of floral and woody notes, perfect for evening wear.",
-    "quantity":50
+    "quantity":50,
+    "category": "men"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "price": 15.92,
     "image": "images/product2.png",
     "description": "Fresh and citrusy, this scent provides a light and energetic feel for daily use.",
-    "quantity":40
+    "quantity":40,
+    "category": "men"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "price": 32.28,
     "image": "images/product3.png",
     "description": "An earthy and spicy fragrance designed for a bold and lasting impression.",
-    "quantity":100
+    "quantity":100,
+    "category": "men"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "price": 25.98,
     "image": "images/product4.png",
     "description": "A modern, minimalist scent with clean aquatic and musk undertones.",
-    "quantity":57
+    "quantity":57,
+    "category": "men"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "price": 25.22,
     "image": "images/product5.png",
     "description": "Rich and warm aroma featuring notes of vanilla and exotic spices.",
-    "quantity":64
+    "quantity":64,
+    "category": "women"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "price": 29.87,
     "image": "images/product6.png",
     "description": "A delicate and airy fragrance that captures the essence of a spring garden.",
-    "quantity":48
+    "quantity":48,
+    "category": "men"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "price": 35.88,
     "image": "images/product7.png",
     "description": "Deep, smoky, and mysterious—a fragrance for those who enjoy a complex profile.",
-    "quantity":12
+    "quantity":12,
+    "category": "women"
   },
   {
     "id": 8,
@@ -61,6 +68,7 @@
     "price": 17.35,
     "image": "images/product8.png",
     "description": "A subtle, sweet scent with a hint of sandalwood for a balanced finish.",
-    "quantity":34
+    "quantity":34,
+    "category": "women"
   }
 ]
