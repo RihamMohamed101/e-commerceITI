@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+  <div class="mainimage">
+    <div class="navbar-box">
+      <div>
+        <img src="assets/images/zekra.jpeg" alt="">
+      </div>
+      <div class="link-sheader">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="">Contact</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About</a></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="maincontent">
+      <div class="logobar">
+        <h2 class="Welcome">Welcome to</h2>
+        <h1>Zekra</h1>
+        <h2 class="store">Store</h2>
+      </div>
+      <div class="log-regbox">
+        <div class="mainbar loginbar">
+          <h2>Login</h2>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="text" id="email-login" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" name="" id="password-login" required>
+            <label>Password</label>
+          </div>
+          <p id="error-msg"></p>
+          <div class="Remember-forgetbar">
+            <label>
+              <input type="checkbox" name="" id="">
+              Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <div class="btn-box">
+            <button id="login-btn">Login</button>
+          </div>
+          <div class="regiter-login">
+            <p>Don't have an account? <a href="#" class="register-link">Register now</a></p>
+          </div>
+        </div>
+        <div class="mainbar registerbar">
+          <h2>Register</h2>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <input type="text" id="name-register" required>
+            <label>Name</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="text" id="email-register" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" name="" id="password-register" required>
+            <label>Password</label>
+          </div>
+          <p id="validation-msg"></p>
+          <div class="btn-box">
+            <button id="register-btn">Register</button>
+          </div>
+          <div class="regiter-login">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/login.js"></script>
+</body>
+
+</html>
