@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Zekra Perfumes</title>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Header -->
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Back to Shop</span>
+            </a>
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L8 8V22L16 28L24 22V8L16 2Z" stroke="#9c816b" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M16 12C17.6569 12 19 10.6569 19 9C19 7.34315 17.6569 6 16 6C14.3431 6 13 7.34315 13 9C13 10.6569 14.3431 12 16 12Z"
+                        fill="#a78d78" />
+                </svg>
+                <h1>ZEKRA</h1>
+            </div>
+            <div class="secure-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z" />
+                </svg>
+                <span>Secure Checkout</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="checkout-container">
+        <!-- Left Side - Order Summary & Cart Items -->
+        <div class="left-section">
+            <div class="section-card cart-section">
+                <div class="section-header">
+                    <h2>Order Summary</h2>
+                    <span class="item-count" id="item-count">0 items</span>
+                </div>
+
+                <div class="cart-items-list" id="checkout-cart-items">
+                    <!-- Cart items will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Discount Code - Moved to left side -->
+            <div class="section-card discount-card">
+                <div class="section-header">
+                    <h3>Discount Code</h3>
+                </div>
+                <div class="discount-input-group">
+                    <input type="text" id="discount-code" placeholder="Enter code">
+                    <button class="apply-btn" id="apply-discount">Apply</button>
+                </div>
+                <div class="discount-message hidden" id="discount-message"></div>
+            </div>
+        </div>
+
+        <!-- Right Side - Shipping, Payment & Summary -->
+        <div class="right-section">
+            <!-- Shipping Address -->
+            <div class="section-card compact-card">
+                <div class="section-header">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                            style="width: 18px; height: 18px; fill: #9c816b; margin-right: 8px;">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        </svg>
+                        Shipping
+                    </h3>
+                    <button class="edit-btn" id="edit-address">Edit</button>
+                </div>
+                <div class="address-display" id="address-display">
+                    <div class="address-compact">
+                        <p class="address-name" id="display-name">Mahmoud Mohamed</p>
+                        <p class="address-line" id="display-address">45 El Corniche Street, Sidi Gaber</p>
+                        <p class="address-line" id="display-city">Alexandria, 21599</p>
+                        <p class="address-line" id="display-country">Egypt</p>
+                    </div>
+                </div>
+                <form class="address-form hidden" id="address-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="full-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" placeholder="Phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="address" placeholder="Street Address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="city" required>
+                                <option value="">City</option>
+                                <option value="Cairo">Cairo</option>
+                                <option value="Alexandria">Alexandria</option>
+                                <option value="Giza">Giza</option>
+                                <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+                                <option value="Hurghada">Hurghada</option>
+                                <option value="Luxor">Luxor</option>
+                                <option value="Aswan">Aswan</option>
+                                <option value="Port Said">Port Said</option>
+                                <option value="Suez">Suez</option>
+                                <option value="Mansoura">Mansoura</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="postal" placeholder="Postal" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="governorate" required>
+                            <option value="">Governorate</option>
+                            <option value="Cairo">Cairo</option>
+                            <option value="Alexandria">Alexandria</option>
+                            <option value="Giza">Giza</option>
+                            <option value="Qalyubia">Qalyubia</option>
+                            <option value="Dakahlia">Dakahlia</option>
+                            <option value="Sharqia">Sharqia</option>
+                            <option value="Red Sea">Red Sea</option>
+                            <option value="South Sinai">South Sinai</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="save-btn">Save</button>
+                </form>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="section-card compact-card">
+                <div class="section-header">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                            style="width: 18px; height: 18px; fill: #9c816b; margin-right: 8px;">
+                            <path
+                                d="M512 80c8.8 0 16 7.2 16 16l0 32L48 128l0-32c0-8.8 7.2-16 16-16l448 0zm16 144l0 192c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16l0-192 480 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z" />
+                        </svg>
+                        Payment
+                    </h3>
+                </div>
+                <div class="payment-display" id="payment-display">
+                    <div class="payment-options-compact">
+                        <label class="payment-option-compact selected" data-payment="card">
+                            <input type="radio" name="payment" value="card" checked>
+                            <span>Card</span>
+                        </label>
+                        <label class="payment-option-compact" data-payment="paypal">
+                            <input type="radio" name="payment" value="paypal">
+                            <span>PayPal</span>
+                        </label>
+                        <label class="payment-option-compact" data-payment="cash">
+                            <input type="radio" name="payment" value="cash">
+                            <span>Cash on Delivery</span>
+                        </label>
+                    </div>
+
+                    <!-- Card Payment Details -->
+                    <div class="payment-details" id="card-details">
+                        <form class="payment-form">
+                            <div class="form-group">
+                                <input type="text" id="card-number" placeholder="Card Number" maxlength="19" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="card-name" placeholder="Cardholder Name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="card-cvv" placeholder="CVV" maxlength="3" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- PayPal Payment Details -->
+                    <div class="payment-details hidden" id="paypal-details">
+                        <form class="payment-form">
+                            <div class="form-group">
+                                <input type="email" id="paypal-email" placeholder="PayPal Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="paypal-password" placeholder="PayPal Password" required>
+                            </div>
+                            <div class="paypal-note">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    style="width: 16px; height: 16px; fill: #9c816b;">
+                                    <path
+                                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                                <span>You'll be redirected to PayPal to complete payment</span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Cash on Delivery (No form needed) -->
+                    <div class="payment-details hidden" id="cash-details">
+                        <div class="cod-message">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                style="width: 40px; height: 40px; fill: #5cbb98; margin-bottom: 1rem;">
+                                <path
+                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                            </svg>
+                            <p class="cod-title">Pay When You Receive</p>
+                            <p class="cod-subtitle">Pay in cash when your order is delivered to your doorstep</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Summary -->
+            <div class="section-card summary-card">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="summary-shipping" class="free-shipping">FREE</span>
+                </div>
+                <div class="summary-row discount-row hidden" id="discount-row">
+                    <span>Discount <span class="discount-code-display" id="applied-code"></span></span>
+                    <span class="discount-amount" id="discount-amount">-$0.00</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span class="total-amount" id="summary-total">$0.00</span>
+                </div>
+
+                <!-- Checkout Button -->
+                <button class="checkout-btn" id="place-order-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z" />
+                    </svg>
+                    <span>Place Order</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/checkout.js"></script>
+</body>
+
+</html>
