@@ -1,0 +1,57 @@
+:root {
+  --text-color: #9c816b;        /* main text */
+  --muted-text: #555;           /* paragraphs, labels */
+  --heading-color: #9c816b;     /* titles */
+  --link-color: #9c816b;
+}
+
+.dark {
+  --text-color: #e6dcd2;
+  --muted-text: #b5b5b5;
+  --heading-color: #f1e6d9;
+  --link-color: #d1b38c;
+}
+
+body {
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+p, span, label, small {
+  color: var(--muted-text);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.text-muted {
+  color: var(--muted-text) !important;
+}
+
+.text-dark {
+  color: var(--text-color) !important;
+}
+
+.text-light {
+  color: var(--heading-color) !important;
+}
+
+input,
+textarea {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted-text);
+}
+.text-primary {
+  color: var(--primary-color) !important;
+}
+

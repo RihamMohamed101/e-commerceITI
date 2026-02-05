@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Saint Brvbeu",
+    "price": 35.22,
+    "images": [
+      "assets/images/product1.png",
+      "assets/images/product1-2.png",
+      "assets/images/product1-3.png"
+    ],
+    "description": "A sophisticated blend of floral and woody notes, perfect for evening wear.",
+    "quantity": 50,
+    "category": "men"
+  },
+  {
+    "id": 2,
+    "name": "Chamelio",
+    "price": 15.92,
+    "images": [
+      "assets/images/product2.png",
+      "assets/images/product2-2.png",
+      "assets/images/product2-3.png"
+    ],
+    "description": "Fresh and citrusy, this scent provides a light and energetic feel for daily use.",
+    "quantity": 40,
+    "category": "men"
+  },
+  {
+    "id": 3,
+    "name": "Secta Corm",
+    "price": 32.28,
+    "images": [
+      "assets/images/product3.png",
+      "assets/images/product3-2.png",
+      "assets/images/product3-3.png"
+    ],
+    "description": "An earthy and spicy fragrance designed for a bold and lasting impression.",
+    "quantity": 100,
+    "category": "men"
+  },
+  {
+    "id": 4,
+    "name": "Beone Neo",
+    "price": 25.98,
+    "images": [
+      "assets/images/product4.png",
+      "assets/images/product4-2.png",
+      "assets/images/product4-3.png"
+    ],
+    "description": "A modern, minimalist scent with clean aquatic and musk undertones.",
+    "quantity": 57,
+    "category": "men"
+  },
+  {
+    "id": 5,
+    "name": "JK Klove",
+    "price": 25.22,
+    "images": [
+      "assets/images/product5.png",
+      "assets/images/product5-2.png",
+      "assets/images/product5-3.png"
+    ],
+    "description": "Rich and warm aroma featuring notes of vanilla and exotic spices.",
+    "quantity": 64,
+    "category": "women"
+  },
+  {
+    "id": 6,
+    "name": "Cygnus",
+    "price": 29.87,
+    "images": [
+      "assets/images/product6.png",
+      "assets/images/product6-2.png",
+      "assets/images/product6-3.png"
+    ],
+    "description": "A delicate and airy fragrance that captures the essence of a spring garden.",
+    "quantity": 48,
+    "category": "men"
+  },
+  {
+    "id": 7,
+    "name": "Ceroky",
+    "price": 35.88,
+    "images": [
+      "assets/images/product7.png",
+      "assets/images/product7-2.png",
+      "assets/images/product7-3.png"
+    ],
+    "description": "Deep, smoky, and mysterious—a fragrance for those who enjoy a complex profile.",
+    "quantity": 12,
+    "category": "women"
+  },
+  {
+    "id": 8,
+    "name": "Kenirt",
+    "price": 17.35,
+    "images": [
+      "assets/images/product8.png",
+      "assets/images/product8-2.png",
+      "assets/images/product8-3.png"
+    ],
+    "description": "A subtle, sweet scent with a hint of sandalwood for a balanced finish.",
+    "quantity": 34,
+    "category": "women"
+  }
+]

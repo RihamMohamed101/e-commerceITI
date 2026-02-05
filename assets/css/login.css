@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+}
+.mainimage {
+  position: relative;
+  background: url(../images/44.jpeg) center / cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mainimage::before {
+  position: absolute;
+  content: "";
+  background: inherit;
+  inset: -50px;
+  z-index: 1;
+  filter: blur(20px);
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 1) 75%
+  );
+}
+
+img {
+  width: 100px;
+}
+
+.navbar-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  top: 30px;
+  z-index: 2;
+}
+.link-sheader > ul > li > a {
+  position: relative;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.link-sheader > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+  transform: translateY(10px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.link-sheader > ul > li > a:hover::after {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.maincontent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  height: 65%;
+  border-radius: 50px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.logobar {
+  position: absolute;
+  width: 64%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1vw;
+}
+
+.logobar h2 {
+  color: #9c816b;
+}
+
+.log-regbox .mainbar.registerbar {
+  transform: translateX(500px);
+  transition: 0.5s ease;
+}
+
+.log-regbox.active .mainbar.registerbar {
+  transform: translateX(0px);
+  transition-delay: 0.6s;
+}
+
+.log-regbox .mainbar.loginbar {
+  transform: translateX(0px);
+  transition: 0.5s ease;
+  transition-delay: 0.6s;
+}
+.log-regbox.active .mainbar.loginbar {
+  transform: translateX(500px);
+  transition-delay: 0s;
+}
+
+#validation-msg,
+#error-msg {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0px auto;
+}
+
+.Welcome {
+  text-align: start;
+}
+
+.store {
+  text-align: end;
+}
+
+.log-regbox::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  z-index: 1;
+  filter: blur(50px);
+}
+
+label {
+  color: white;
+}
+
+.loginbar,
+.registerbar {
+  position: absolute;
+  right: 0px;
+  top: 5%;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-box,
+.Remember-forgetbar,
+.terms,
+button {
+  width: 90%;
+}
+
+h1 {
+  font-size: 15vmax;
+  background-image: url(../images/22.jpg);
+  background-position: center;
+  background-size: 300% 300%;
+  background-clip: text;
+  color: transparent;
+  animation: animate 30s ease-in-out infinite alternate;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.log-regbox {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 35%;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 5vmax;
+  color: white;
+}
+.input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-box {
+  position: relative;
+  width: 90%;
+  min-height: 30px;
+  margin: 15px 0;
+  border-bottom: 2px solid white;
+}
+
+.input-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1rem;
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+.input-box:focus-within {
+  border-bottom: 2px solid #a78d78;
+}
+.input-box:focus-within .icon {
+  color: #a78d78;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 19px;
+  color: white;
+}
+
+.Remember-forgetbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.Remember-forgetbar > label,
+a {
+  color: white;
+  font-size: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+button {
+  margin: 0px auto 20px;
+  width: 70%;
+  height: 45px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #a1978f, #a78d78d0);
+  color: white;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #a78d78d0, #a1978f);
+  box-shadow: 0 5px 5px 0 rgba(239, 236, 236, 0.3);
+  cursor: pointer;
+}
+
+.regiter-login {
+  display: flex;
+  justify-content: center;
+}
+.regiter-login p {
+  color: white;
+  font-size: 14px;
+}
+.regiter-login a {
+  color: white;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .maincontent {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 0;
+  }
+
+  .logobar {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .log-regbox {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .mainbar.loginbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 15vmax;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+}
