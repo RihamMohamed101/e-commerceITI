@@ -28,3 +28,4 @@ This project has been refactored into a unified structure with clean code practi
 ## Setup
 
 Simply open `index.html` in your browser. No server required (though recommended for some features).
+# Ecommerce-ITI-clone
